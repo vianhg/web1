@@ -1,0 +1,707 @@
+@import url('https://fonts.googleapis.com/css?family=Princess+Sofia|Roboto');
+
+body, html {
+	width: 100%;
+    height: 100%;
+}
+
+body {
+    
+/*    font-family: 'Princess Sofia', cursive;*/
+
+    font-family: 'Roboto', sans-serif;
+	background-color: #233D58;
+}
+
+header {
+	background-color: #233D58;
+	height: 50px;
+	width: 100%;
+	position: absolute;
+	top: 0px;
+}
+
+a {
+	text-decoration: none;
+	color: black;	
+}
+#logo {
+	display: inline-block;
+	height: 30px;
+	width: 30px;
+	margin: 3px;
+	top: 0px;
+}
+
+#logo img {
+	height: 100%;
+}
+
+header h1 {
+	font-family: 'Princess Sofia', cursive;
+	margin: 0px;
+	display: none;
+}
+
+.ioMenuMovil {
+	line-height: 40px;
+	height: 25px; 
+	margin: 0px 0px 0px 10px;
+	cursor: pointer;
+	width: 120px;
+	padding-top: 5px;
+}
+
+.ioMenuMovil img {
+	height: 100%;
+}
+
+.card_menu {
+	position: relative;
+	height: 100%;
+	width: 230px;
+	background: white;
+	top: -30px;
+	left: 0px;
+	border-right: 3px solid #AFAEAE;
+	display: block;
+	z-index: 999;
+	padding-bottom: 20px;
+}
+
+.card_menu ul li{
+	list-style: none;
+	font-size: 1.5em;
+	padding-bottom: 10px;
+}
+
+#logo_menu  {
+	width: 80%;
+	margin: 30px 0;
+	margin-left: 10%;
+}
+
+#logo_menu img {
+	width: 100%;
+}
+
+.prev, .next {
+	position: absolute;
+	top: 0px;
+	width: 25px;
+	height: 25px;
+	margin: 5px;
+	font-family: "icomoon";
+	font-size: 2em;
+	text-align: center;
+	cursor: pointer;
+}
+
+.next { right: 5px; }
+.prev { right: 35px; }
+.prev:before {
+	content: "\e902";
+}
+
+.next:before {
+	content: "\e901";
+}
+
+
+.slider {
+	position: absolute;
+	top: 50px;
+	width: 100%;
+	min-height: 100px;
+}
+
+.slider section {
+	width: 100%;
+	height: 100%;
+
+}
+
+footer {
+	background-color: black;
+	height: 15px;
+	width: 100%;	
+	position: fixed;
+	bottom: 0px;	
+	transition-duration: 0.4s;
+	color: white;
+}
+
+footer:before {
+	content: "\e900";
+	font-family: "icomoon";
+	font-size: 2em;
+	color: white;
+	position: absolute;
+	text-align: center;
+	width: 40px;
+	height: 40px;
+	left: 50%;
+	margin-left: -20px;
+	margin-top: -25px;
+	border-radius: 50%;
+	line-height: 40px;
+	background-color: black;
+	-webkit-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+	transition-duration: 0.4s;
+}
+
+footer:hover {
+	height: 90px;
+}
+
+footer:hover:before {
+	content: "\e900";
+	font-family: "icomoon";
+	font-size: 2em;
+	color: black;
+	background-color: white;
+	-webkit-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+
+footer .rrss {
+	text-align: center;
+	margin: 15px 0px 0px 0px;
+}
+
+footer .rrss span a {
+	font-family: "icomoon";
+	padding: 5px;	
+	margin: 0px 5px 0px 5px;
+	line-height: 50px;
+	font-size: 1.7em;
+	text-align: center;
+	color: white;
+}
+
+footer p {
+	font-size: 1ex;
+	text-align: center;
+	margin-top: 0px;
+}
+
+#aboutme, #skills, #portfolio, #blog, #contact {
+	display: none;
+}
+
+#home {
+	position: relative;
+	text-align: center;
+	padding-bottom: 50px;
+	color: white;
+}
+
+#home .mainanimation {
+    background: none;
+    min-height: 300px;
+    width: 80%;
+    position: absolute;
+    margin-left: 10%;
+}
+
+
+#home h2 {
+	padding-top: 80px;
+	font-family: 'Roboto';
+}
+
+#home h2 strong { 
+	font-size: 1.5em; 
+	display: block; }
+
+#home figure {
+	position: relative;
+	width: 270px;	
+	left: 50%;
+	margin: 30px 0px 30px -135px;
+}
+
+#home .facepage figure img {
+	width: 80%;
+}
+
+#home .buttonspanel {
+	position: relative;
+}
+
+#home .buttonspanel div {
+	display: inline-block;
+	padding: 15px;
+	color: white;
+	width: 200px;
+	margin: 0 15px;
+	cursor: pointer;
+	background-color: #29abe2; 
+}
+
+#home .buttonspanel div a {
+	padding: 10px 15px;
+}
+
+#home .buttonspanel #hireme {
+	background-color: #F8931F;
+}
+
+#contact_button {
+	background-color: #F8931F;
+	border-radius: 50%;
+	color: white;
+	position: fixed;
+	width: 60px;
+	height: 60px;
+	top: 80vh; 
+	right: 10px;
+	z-index: 80;
+}
+
+#contact {
+	display: none;
+	width: 400px;
+	background-color: rgb(237, 242, 235); 
+	position: absolute;
+	top: 50px;
+	right: 0;
+	z-index: 999;
+}
+
+#contact .contacticon {
+	background-color: #29abe2;
+	position: relative;
+	height: 170px;
+}
+
+#contact .contacticon figure {
+	position: relative;
+	width: 40%;
+	left: 30%;
+	margin: 0;
+}
+
+#contact .contacticon figure img {
+	width: 100%;
+}
+
+#contact #f1 * {
+	width: 85%;
+	margin: 10px 20px;
+}
+
+#contact #f1 .closefrm{
+	position: absolute;
+	top: 160px;
+	right: 0px;
+	height: 30px;
+	width: 30px;
+	font-size: 2em;
+}
+#contact .closefrm:hover{
+	cursor: pointer;
+}
+
+#contact #f1 input,
+#contact #f1 textarea{
+	display: block;
+	border:none;
+	border-bottom: 2px solid gray;
+	padding-bottom: 3px;
+	font-weight: bold;
+	margin-bottom: 50px;
+	background: none;
+}
+#contact #f1 button{
+	padding: 8px 0px;
+	border-radius: 5px;
+	border: none;
+	background: #F8931F;
+	color: white;
+	margin-bottom: 20px;	
+}
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+#aboutme .mifoto {
+	position: relative;
+	top: 0;
+	left: 10%;
+	width: 80%;
+}
+
+#aboutme .mifoto figure {
+	position: relative;
+	width: 100%;
+	margin: 0;
+	height: 183px;
+	overflow: hidden;
+}
+
+#aboutme .mifoto figure img {
+	width: 100%;
+	margin-top: -25%;
+}
+
+#aboutme .abstract {
+	position: relative;
+	top: -50px;
+	width: 60%;
+	left: 20%;
+	box-shadow: 1px 1px 1px black;
+	background-color: white;
+	padding: 50px 20px 20px 20px;
+	font-size: 1em;
+
+}
+
+#aboutme .logotipos {
+
+}
+
+.aboutme .logotipos {
+	
+}
+
+/*********************************************************************************************************************************************/
+/**********************************************          S K I L L S           **********************************************************/
+/*********************************************************************************************************************************************/
+#skills {
+	padding: 30px 0;
+	position: relative;
+}
+#skills .skill {
+	position: relative;
+	top: 0;
+	width: 45%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+#skills .skill h2 {
+
+}
+
+#skills .skill .measures, 
+#skills .skill .list1, 
+#skills .skill .list2,
+#skills .skill .hobbies {
+	background-color: lightgray;
+	text-transform: uppercase;
+	position: relative;
+	padding: 30px 15px;
+	border-radius: 5px;
+}
+
+#skills .skill .measures .progressbar {
+	position: relative;
+	width: 100%;
+	height: 25px;
+}
+
+#skills .skill .measures .progressbar .hexagon{
+	position: relative;
+	left: 87%;
+	top: -5px;
+	width: 40px;
+	height: 40px;
+	margin-left: -10px;
+	text-align: center;
+	z-index: 2;
+}
+
+#skills .skill .measures .progressbar .hexagon:before {
+	content: '';
+	position: absolute;
+	border: 2px dotted #29abe2;
+	left: 0;
+	top: -10px;
+	width: 40px;
+	height: 40px;
+	margin-left: -10px;
+	text-align: center;
+	z-index: 2;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+	transform-origin: center center;
+}
+
+#skills .skill .measures .progressbar .fill {
+	position: absolute;
+	height: 10px;
+	left: 0;
+	top: 0;
+	width: 87%;
+	background-color: #29abe2;
+	z-index: 1;
+}
+
+#skills .skill .measures .progressbar .empty {
+	position: absolute;
+	height: 10px;
+	left: 87%;
+	top: 0;
+	width: 13%;
+	background-color: white;
+	z-index: 1;
+}
+
+#skills .skill .list1 ul {
+	list-style: none;
+
+}
+
+#skills .skill .list1 ul li {
+	position: relative;
+	display: inline-block;
+	width: 40%;
+	margin: 10px 0px;
+	padding-right:  20px;
+	vertical-align: top;
+}
+#skills .skill .list1 ul li:before {
+    font-family: 'icomoon';
+    content: "\e900";
+    color: #29abe2;
+    font-size: 1.5em;
+    position: absolute;
+    top: -2px;
+    left: -30px;
+}
+
+#skills .skill .hobbies .hobby {
+	background: url(../img/videogame_asset.svg) no-repeat;
+	background-size: 70% auto;
+	background-position: top center;
+	position: relative;
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	border: 1px solid gray;
+	margin: 20px;
+	vertical-align: top;
+	
+}
+
+#skills .skill .hobbies .hobby p {
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	font-size: 1em;
+	text-align: center;
+	margin: 5px 0;
+}
+/*********************************************************************************************************************************************/
+/**********************************************          PORTFOLIO           **********************************************************/
+/*********************************************************************************************************************************************/
+
+#portfolio  {
+	padding: 30px 0;
+	position: relative;
+}
+
+#portfolio .categorias {
+   position: relative;
+   width: 100%;
+   margin: 40px 0px;
+   text-align: center;
+}
+
+#portfolio .categorias .filter {
+	position: relative;
+	width: 100px;
+	height: 40px;
+	line-height: 50px;
+	box-shadow: 0px 0px 3px gray;
+	text-transform: uppercase;
+	text-align: center;
+	margin: 5px 20px;
+	padding: 10px;
+	cursor: pointer;
+
+}
+
+#portfolio .jobs {
+	padding-bottom: 20px;
+	text-align: center;
+}
+
+#portfolio .jobs .logotipo {
+	display: inline-block;
+	vertical-align: top;
+	background-color: #29abe2;
+	border-radius: 3px;
+	box-shadow: 0px 0px 3px gray;
+	width: 200px;
+	height: 300px;
+	margin: 10px 5px;
+	text-align: center;
+}
+
+#portfolio .jobs .logotipo figure {
+	position: relative;
+	width: 100%;
+	margin: 0;
+	-webkit-transition-duration: 2s;
+	-o-transition-duration: 2s;
+	transition-duration: 2s;
+}
+
+#portfolio .jobs .logotipo figure:hover{
+	transform: rotateY(90deg);
+}
+
+#portfolio .jobs .logotipo figure img {
+	width: 100%;
+}
+
+#portfolio .jobs .logotipo figure figcaption span {
+	color: gray;
+	display: block;
+}
+
+/*********************************************************************************************************************************************/
+/**********************************************          PORTFOLIO           **********************************************************/
+/*********************************************************************************************************************************************/
+
+#blog  {
+	margin-top: 30px;
+	position: relative;
+}
+
+#blog #container_blog {
+   position: relative;
+   width: 100%;
+   text-align: center;
+}
+
+#blog #container_blog .post {
+	box-shadow: 1px 1px 2px gray;
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+	width: 200px;
+	margin: 5px;	
+}
+
+#blog #container_blog .post .post_izq {
+	position: relative;
+	width: 100%;
+	height: 200px;
+	
+}
+
+#blog #container_blog .post .post_izq figure {
+	margin: 0;
+	width: 100%;
+}
+
+#blog #container_blog .post .post_izq figure img{
+	width: 100%;	
+}
+
+
+
+
+/*********************************************************************************************************************************************/
+/**********************************************          S C R E E N           **********************************************************/
+/*********************************************************************************************************************************************/
+
+@media screen and (min-width: 480px){
+	/*.card_menu {
+		position: absolute;
+		top: 0;
+	}
+	.card_menu ul li{
+		display: inline-block;
+	}*/
+	footer {
+		height: 15px;
+	}
+	#aboutme .mifoto figure {
+    	height: 213px;
+	}
+
+}
+
+
+@media screen and (min-width: 600px){
+	#aboutme .mifoto figure {
+    	height: 243px;
+	}
+	
+}
+
+@media screen and (min-width: 767px){
+	header {
+		height: 50px;
+	}
+	header h1 {
+		display: inline-block;
+		min-width: 200px;
+	}
+
+	header nav {
+		display: inline-block;
+		vertical-align: middle;
+		position: relative;
+		width: 62%;
+		height: 50px;
+	}
+
+	header nav #showMenu, header nav #showMenu {
+		display: none;
+	}
+
+	header nav .card_menu {
+		display: inline-block;
+		background: none;
+		border: none;
+		position: relative;
+		top: 0;
+		width: 100%;
+		padding-bottom: 0;
+		text-align: right;
+	}
+
+	header nav .card_menu figure {
+		display: none;
+	}
+
+	header nav .card_menu ul {
+		padding: 0px;
+		margin: -15px 0 0 0;
+	}
+	header nav .card_menu ul li {
+		display: inline-block;
+		width: 75px;
+		text-align: center;
+		font-size: 1.1em;
+		margin: 0px -2px;
+		line-height: 75px;
+	}
+
+	header nav .card_menu ul li a {
+		color: white;
+	}
+
+	.prev, .next {
+		position: absolute;
+		width: 50px;
+		height: 50px;
+		right: 40px;
+		z-index: 999;
+		background-color: #29abe2;
+		border-radius: 50%;
+		line-height: 50px;
+	}
+	.next { top: 190px; }
+	.prev { top: 115px; }
+
+}
